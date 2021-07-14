@@ -1,0 +1,28 @@
+@use './variables' as *;
+@use './functions' as *;
+
+@mixin mq($value){
+  @media #{map-get($mq, $value)}{
+    @content;
+  }
+}
+
+@mixin noto-sans {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+@mixin open-sans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+@mixin inner-sp {
+  margin: 0 auto;
+  padding: 0 rem(16);
+}
+
+@mixin inner-pc {
+  max-width: calc(1224px + 10.4%);
+  margin: 0 auto;
+  padding: 0 5.2%;
+}

@@ -1,0 +1,8 @@
+@use '../../../global/mixins' as *;
+@use '../../../global/functions' as *;
+
+.xxx {
+  $this: &;
+  @include mq("pc") {
+  }
+}

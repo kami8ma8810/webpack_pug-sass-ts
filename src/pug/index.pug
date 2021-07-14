@@ -1,0 +1,24 @@
+extends ./_assets/template/_home
+
+block append config
+	- var type = 'home';
+	- var name = 'home';
+	- var page = pagelist[name];
+	- var cssPath = paths.css
+	- var imgPath = paths.img
+	- var jsPath = paths.js
+
+block append head
+	link(rel="stylesheet" href=cssPath+"pages/home/style.css")
+
+block content
+
+	// main
+	main.main._home
+		p トップページです。
+		p.main_box
+			img.main_img(src=imgPath + "xxx.png", alt="")
+	// / main
+
+block append script
+	script(src=jsPath+"home.js")

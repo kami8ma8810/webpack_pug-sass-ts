@@ -1,0 +1,8 @@
+:root {
+  --site-white: #fff;
+  --site-black: #000;
+  --site-gray: #333;
+  --site-transition-duration: .3s;
+  --site-transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+  --site-transition-delay: .5s;
+}

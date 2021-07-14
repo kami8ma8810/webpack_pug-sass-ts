@@ -1,0 +1,14 @@
+@use '../global/mixins' as *;
+@use '../global/functions' as *;
+@use '../global/variables' as *;
+
+.header {
+  $this: &;
+  padding: rem(18);
+  background-color: var(--site-gray);
+  color: var(--site-white);
+  text-align: center;
+  @include mq("pc") {
+    padding: rem(24);
+  }
+}

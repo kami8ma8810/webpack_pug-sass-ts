@@ -1,0 +1,11 @@
+@use '../global/mixins' as *;
+@use '../global/functions' as *;
+@use '../global/variables' as *;
+
+.logo {
+  display: block;
+  width: rem(64);
+  margin: rem(24) auto 0;
+  @include mq("pc") {
+  }
+}

@@ -1,0 +1,22 @@
+extends ../_assets/template/_page
+
+block append config
+	- var type = 'about';
+	- var name = 'about';
+	- var page = pagelist[name];
+	- var cssPath = paths.css
+	- var imgPath = paths.img
+	- var jsPath = paths.js
+
+block append head
+	link(rel="stylesheet" href=cssPath+"pages/about/style.css")
+
+block content
+
+	// main
+	main.main._page
+		p 下層ページです。
+	// / main
+
+block append script
+	script(src=jsPath+"about.js")

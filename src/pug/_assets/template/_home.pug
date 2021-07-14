@@ -1,0 +1,30 @@
+- var pagelist = htmlWebpackPlugin.options.data.pagelist
+- var paths = htmlWebpackPlugin.options.data.paths
+- var links = htmlWebpackPlugin.options.data.links
+
+block config
+
+	//- layout
+	include ../layout/_head
+	include ../layout/_header
+	include ../layout/_footer
+	include ../layout/_script
+
+doctype html
+html(lang="ja")
+	head
+		block head
+			+head(page, paths)
+
+	body
+
+		+header(page, paths)
+
+		block content
+
+		+footer(page, paths)
+
+		//- +menu(page, paths)
+
+		block script
+			+script(page, paths)

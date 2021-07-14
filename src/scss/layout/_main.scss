@@ -1,0 +1,26 @@
+@use '../global/mixins' as *;
+@use '../global/functions' as *;
+@use '../global/variables' as *;
+
+.main {
+  $this: &;
+
+  padding: rem(18);
+  @include mq("pc") {
+    padding: rem(24);
+  }
+
+  // box
+  &_box {
+    @include mq("pc") {
+      width: rem(320);
+      margin: 0 auto;
+    }
+  }
+
+  // img
+  &_img {
+
+  }
+
+}

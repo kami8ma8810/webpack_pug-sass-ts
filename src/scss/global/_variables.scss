@@ -1,0 +1,21 @@
+$breakPointList: 374px, 767px, 768px, 1200px;
+
+$img-dir: "/img/";
+$font-dir: "/fonts/";
+
+$mq: (
+  "sp-min": "screen and (max-width: #{nth($breakPointList, 1)})",
+  "sp": "screen and (max-width: #{nth($breakPointList, 2)})",
+  "sp-only": "screen and (max-width: #{nth($breakPointList, 3)})",
+  "pc": "print,screen and (min-width: #{nth($breakPointList, 3)})",
+  "pc-min": "print,screen and (min-width: #{nth($breakPointList, 3)}) and (max-width: #{nth($breakPointList, 4)})",
+) !default;
+
+:root {
+  --site-white: #fff;
+  --site-black: #000;
+  --site-gray: #333;
+  --site-transition-duration: .3s;
+  --site-transition-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+  --site-transition-delay: .5s;
+}
